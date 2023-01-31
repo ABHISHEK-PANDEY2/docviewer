@@ -1,0 +1,19 @@
+.sidenav{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 40px 10px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fileTitle {
+    margin: 0;
+    cursor: pointer;
+}
+
+.fileTitle:hover{
+    font-size: 1.1rem;
+}

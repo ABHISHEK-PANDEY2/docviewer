@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body{
+  margin:0;
+  /* height: 100vh; */
+  width: 100vw;
+  font-family: 'Popins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-pdf__Page .react-pdf__Page__textContent.textLayer{
+  display: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.react-pdf__Page__annotations.annotationLayer{
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+#signInButton{
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#signInButton button{
+  padding: 8px 82px !important;
+}
+
+.react-pdf__message.react-pdf__message--error{
+  display: none !important;
 }

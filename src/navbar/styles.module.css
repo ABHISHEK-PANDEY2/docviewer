@@ -1,0 +1,55 @@
+.navbar{
+    box-sizing: border-box;
+    padding: 5px 40px;
+    z-index: 1000;
+    background-color: white;
+    box-sizing: border-box;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
+}
+
+nav ul {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li{
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 50px;
+}
+
+.logout{
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    height: 70%;
+}
+
+.imageText{
+    height: 30%;
+}
